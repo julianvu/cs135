@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Labs - CS 135 - Computer Science I</title>
+
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    <link rel="stylesheet" href="../css/theme.css">
+
+    
+
+    <script src="../ js/theme.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"></script>
+
+    
+    
+
+    
+        <script src="../search/main.js"></script>
+    
+
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <nav x-data="{ mobileNavOpen: false }" class="bg-gray-800">
+    <div class="max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href=".." class="text-lg text-white">CS 135 - Computer Science I</a>
+                </div>
+                <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                    
+                        
+                            <a href=".."  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" >Home</a>
+                        
+                    
+                        
+                            <a href="../about/"  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" >About</a>
+                        
+                    
+                        
+                    
+                </div>
+                </div>
+            </div>
+            <div class="-mr-2 flex sm:hidden">
+                <!-- Mobile menu button -->
+                <button type="button" @click="mobileNavOpen = !mobileNavOpen" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!--
+                    Icon when menu is closed.
+
+                    Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" :class="{ 'hidden': mobileNavOpen, 'block': !(mobileNavOpen) }" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!--
+                    Icon when menu is open.
+
+                    Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" :class="{ 'block': mobileNavOpen, 'hidden': !(mobileNavOpen) }" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div x-show="mobileNavOpen" x-transition class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+            
+                
+                    <a href=".."  class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" >Home</a>
+                
+            
+                
+                    <a href="../about/"  class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" >About</a>
+                
+            
+                
+            
+        </div>
+    </div>
+  </nav>
+  
+
+    <div class="flex mx-8 py-8 lg:space-x-8 prose prose-lg max-w-full justify-center">
+        <section class="flex flex-col prose-a:no-underline hidden lg:block lg:w-64 overflow-wrap lg:flex-shrink-0 bg-gray-50 rounded-lg h-fit">
+            <p class="px-6 pt-6 m-0">Table of Contents</p>
+            <ul class="list-none p-4 m-0 space-y-1">
+                
+                    <li class="p-0"><a class="text-gray-700 hover:text-indigo-600 hover:bg-gray-100 group flex rounded-md p-2 leading-6 font-semibold" href="#labs">Labs</a></li>
+                    
+                
+            </ul>
+        </section>
+
+        <main class="w-full max-w-5xl">
+            
+            <h1 id="labs">Labs</h1>
+<p>Computer science adopts the term 'science' in part due to how understanding computer science can be achieved through experimentation and exploration. Thus, students of computer science must supplement the topics they learn in lecture with so-called 'laboratory' assignments to more fully cement their understanding of those topics. </p>
+<p>Students new to computer science are often afraid of experimenting with code—they fear they might irreparably break their computer in performing those experiments. In truth, accidentally writing a program that causes a great deal of damage is remarkably difficult for a beginner. Such a program is the very definition of a computer virus! Malicious hackers have been trying to write such viruses to attack other people's computers for a very long time, and the world at large has generally risen to build countermeasures for such attacks. Thus, it's unlikely a beginner programmer will unwittingly author a virus capable of destroying their computer. </p>
+<p>What will most likely occur when you write a bad program is it will simply crash or spin forever and become unresponsive. You've likely come across such programs in your daily life (e.g. a game suddenly crashes or Photoshop decides to freeze). In which case, the solution is to track down the buggy code, fix it, and restart the program. No real damage is done (other than perhaps losing unsaved work). At worst, you'll freeze up your entire computer, but even that can be solved by a simple reboot. </p>
+<p>I hope I've relieved you of any fears you might have about experimenting with code. As a computer science educator and practitioner, I'm committed to lab assignments as a vital component of computer science education, and hope that you will take advantage of them to enhanced and solidify your understanding of computer science.</p>
+<p>Each lab assignment involves essentially two deliverables:</p>
+<ol>
+<li>writing source code</li>
+<li>describing what the source code does in a lab report</li>
+</ol>
+<p>Each lab assignment contains a sequence of steps to follow, much like a lab procedure in a traditional science class. The assignment is not like a tutorial or recipe—you should not simply follow the steps without thinking about what is happening in the source code. Questions are presented throughout the assignment that are meant to keep you engaged and thinking about what's happening, and they must be answered in the lab report. </p>
+<p>In lecture, you will be given various techniques and tools with which to solve problems, but it is up to you to figure out how to apply those techniques in coming up with solutions to the problems presented. The lab assignment procedure merely offers guidance and hints on how to proceed.</p>
+<p>Thinking of yourself as an investigator is often helpful in lab assignments. For example, to solve a given problem, how might you do it by hand? Then translate that manual process into code. If there are errors, find their causes. Challenge your assumptions. By taking this investigative approach, you will have a much better experience with programming—you will learn more and learn more easily. </p>
+            
+
+            <hr />
+
+        </main>
+    </div>
+
+    <!--
+  MkDocs version      : 1.5.3
+  Docs Build Date UTC : 2023-10-23 22:37:15.789396+00:00
+  -->
+
+</body>
+
+</html>
