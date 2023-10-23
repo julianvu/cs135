@@ -4,8 +4,8 @@ site_url: https://cs135.julianvu.dev
 nav:
   - Home: index.md
   - About: about.md
-  - Labs:
-    - 'Lab 01': labs/lab01.md
+  - Labs: labs/index.md
+  - 'Lab 01': labs/lab01.md
 
 theme:
   name: null

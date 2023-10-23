@@ -1,17 +1,11 @@
-# Welcome to MkDocs
+# CS 135 - Computer Science I
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This is the official class webpage for TMCC's CS 135 - Computer Science I class taught by Julian Vu. 
 
-## Commands
+This webpage contains general information about the course, including the syllabus, labs, and any other handouts relevant to the course. All course lesson videos are on Canvas.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Welcome to CS 135!
 
-## Project layout
+I'm thrilled to be teaching this course! For many of you, this will be your first dive into the vast and growing world of computer science. I'm honored and grateful that you have chosen me to be your instructor. I've been teaching computer science at TMCC since the Fall of 2022. Over the past several semesters, I've been continually impressed by the passion and curiosity that so many students bring into this course. 
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Computers are indeed deeply integrated into nearly every part of our daily lives, and continually find applications in new areas every day. The goal of this course is to give you the skills to give computers instructions on how to solve problems. 
