@@ -1,0 +1,46 @@
+site_name: CS 135 - Computer Science I
+site_url: https://cs135.julianvu.dev
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Labs:
+    - 'Lab 01': labs/lab01.md
+
+theme:
+  name: null
+  custom_dir: theme/
+
+watch:
+  - theme
+
+markdown_extensions:
+  - pymdownx.arithmatex
+  - pymdownx.b64
+  - pymdownx.betterem
+  - pymdownx.blocks.admonition
+  - pymdownx.blocks.definition
+  - pymdownx.blocks.details
+  - pymdownx.blocks.html
+  - pymdownx.blocks.tab
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.escapeall
+  - pymdownx.extra
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.pathconverter
+  - pymdownx.progressbar
+  - pymdownx.saneheaders
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.striphtml
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.tilde

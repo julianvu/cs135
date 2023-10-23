@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+
+    <link rel="shortcut icon" href="{{ "img/favicon.ico"|url }}">
+
+    <link rel="stylesheet" href="{{ "css/theme.css"|url }}">
+
+    {% for path in config.extra_css %}
+        <link href="{{ path|url }}" rel="stylesheet">
+    {% endfor %}
+
+    <script src="{{ " js/theme.js"|url }}"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"></script>
+
+    {% block extrahead %}
+    {% endblock %}
+
+    {% for path in config.extra_javascript %}
+        <script src="{{ path|url }}"></script>
+    {% endfor %}
+
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    {% include "navbar.html" %}
+
+    <div class="flex mx-8 py-8 lg:space-x-8 prose prose-lg max-w-full justify-center">
+        <section class="flex flex-col prose-a:no-underline hidden lg:block lg:w-64 overflow-wrap lg:flex-shrink-0 bg-gray-50 rounded-lg h-fit">
+            <p class="px-6 pt-6 m-0">Table of Contents</p>
+            <ul class="list-none p-4 m-0 space-y-1">
+                {% for toc_item in page.toc %}
+                    <li class="p-0"><a class="text-gray-700 hover:text-indigo-600 hover:bg-gray-100 group flex rounded-md p-2 leading-6 font-semibold" href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+                    {% for toc_item in toc_item.children %}
+                        <li class="p-0"><a class="text-gray-700 hover:text-indigo-600 hover:bg-gray-100 group flex gap-x-3 rounded-md p-2 leading-6 font-semibold" href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+        </section>
+
+        <main class="w-full max-w-5xl">
+            {% block content %}
+            {{ page.content }}
+            {% endblock %}
+
+            <hr />
+
+        </main>
+    </div>
+
+    <!--
+  MkDocs version      : {{ mkdocs_version }}
+  Docs Build Date UTC : {{ build_date_utc }}
+  -->
+
+</body>
+
+</html>
